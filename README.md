@@ -6,7 +6,7 @@ This repository hosts the landing page and the PDF of the preprint, and it serve
 
 ## Read the paper
 
-- Live page. https://YOURNAME.github.io/fl-noniid-review/ (replace YOURNAME once you deploy)
+- Live page. https://jinuthi.github.io/fl-noniid-review/ (replace YOURNAME once you deploy)
 - PDF. `paper.pdf` in this repository
 - Permanent DOI. https://doi.org/10.5281/zenodo.23275814
 
