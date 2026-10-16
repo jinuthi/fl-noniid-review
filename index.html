@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Is Non-IID an Artifact of Training from Scratch?</title>
+
+<!-- ============================================================
+     Google Scholar / Highwire metadata.
+     Scholar reads these tags to index the paper.
+     IMPORTANT. Put the compiled PDF in this same folder, named
+     paper.pdf, so the relative citation_pdf_url below resolves.
+     Keep the title, authors, and date identical to the Zenodo and
+     arXiv versions so Scholar merges them into one record.
+     ============================================================ -->
+<meta name="citation_title" content="Is Non-IID an Artifact of Training from Scratch? A Critical Review of Data Heterogeneity in Federated Learning in the Pretraining Era">
+<meta name="citation_author" content="Sashirangana, Jinuthi">
+<meta name="citation_author" content="Gaurang, Earline">
+<meta name="citation_author" content="Ramzees, Jithesh">
+<meta name="citation_author" content="Jerard, Marlini">
+<meta name="citation_publication_date" content="2026/10/10">
+<meta name="citation_online_date" content="2026/10/10">
+<meta name="citation_pdf_url" content="paper.pdf">
+<meta name="citation_doi" content="10.5281/zenodo.23275814">
+<meta name="citation_keywords" content="federated learning; data heterogeneity; non-IID data; pre-training; foundation models; transfer learning; parameter-efficient fine-tuning; LoRA">
+<meta name="citation_language" content="en">
+
+<!-- Dublin Core, for broader indexers -->
+<meta name="DC.title" content="Is Non-IID an Artifact of Training from Scratch? A Critical Review of Data Heterogeneity in Federated Learning in the Pretraining Era">
+<meta name="DC.creator" content="Jinuthi Sashirangana">
+<meta name="DC.creator" content="Earline Gaurang">
+<meta name="DC.creator" content="Jithesh Ramzees">
+<meta name="DC.creator" content="Marlini Jerard">
+<meta name="DC.date" content="2026-10-10">
+<meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.23275814">
+<meta name="DC.type" content="Preprint">
+<meta name="DC.rights" content="CC BY 4.0">
+
+<meta name="description" content="A critical review arguing that the non-IID problem in federated learning is in large part an artifact of training from scratch, and mapping where a pretrained initialization dissolves, relocates, or amplifies heterogeneity.">
+
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 760px; margin: 0 auto; padding: 2.2rem 1.1rem 4rem;
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 0.6rem; }
+  .authors { font-weight: 600; margin: 0 0 0.2rem; }
+  .meta { color: #666; margin: 0 0 1.4rem; font-size: 0.95rem; }
+  .links a { display: inline-block; margin: 0 0.9rem 0.6rem 0; font-weight: 600; text-decoration: none;
+             border: 1px solid currentColor; border-radius: 8px; padding: 0.45rem 0.9rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 0.5rem; }
+  .kw { color: #666; font-size: 0.95rem; }
+  footer { margin-top: 2.6rem; color: #888; font-size: 0.85rem; border-top: 1px solid #ddd; padding-top: 1rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>Is Non-IID an Artifact of Training from Scratch? A Critical Review of Data Heterogeneity in Federated Learning in the Pretraining Era</h1>
+
+<p class="authors">Jinuthi Sashirangana, Earline Gaurang, Jithesh Ramzees, Marlini Jerard</p>
+<p class="meta">Preprint, 2026. Not yet peer-reviewed. Licensed CC BY 4.0.</p>
+
+<p class="links">
+  <a href="paper.pdf">Download the PDF</a>
+  <a href="https://doi.org/10.5281/zenodo.23275814">View on Zenodo (DOI)</a>
+</p>
+
+<h2>Abstract</h2>
+<p>For nearly a decade, the field has treated non-identically-distributed (non-IID) client data as the defining obstacle of federated learning (FL). This framing motivated a large family of heterogeneity-specific algorithms. Researchers built that consensus almost entirely on models trained from scratch. A more recent body of evidence shows that when federated training instead begins from a pretrained (foundation-model) initialization, the gap between IID and non-IID training shrinks sharply. The gap narrows so far that heterogeneity-specific optimizers lose much of their advantage over a well-tuned FedAvg or FedAdam baseline. Yet the survey literature on non-IID FL, and the emerging literature on federated foundation models, continue to treat heterogeneity as a first-order unsolved problem. For parameter-efficient (LoRA) fine-tuning, feature shift, worst-client fairness, and out-of-distribution clients, heterogeneity in fact persists or is amplified.</p>
+<p>This review reconciles that contradiction. We make three contributions. First, we re-read five years of heterogeneity-specific methods as a single body of work. A from-scratch evaluation protocol confounds their reported gains. We then audit which gains survive a pretrained baseline. Second, we map the precise boundary between regimes where initialization dissolves the non-IID problem and regimes where it merely relocates it. Third, we propose an evaluation protocol under which the claim that pretraining solves heterogeneity can be falsified. We argue the field should replace the goal of designing a better heterogeneity algorithm with a new practice. Report a pretrained-initialization baseline, quantify backbone-to-task alignment, and isolate the residual heterogeneity that pretraining cannot absorb.</p>
+
+<h2>Keywords</h2>
+<p class="kw">Federated learning, data heterogeneity, non-IID data, pre-training, foundation models, transfer learning, parameter-efficient fine-tuning, LoRA.</p>
+
+<h2>Cite this work</h2>
+<p>Sashirangana, J., Gaurang, E., Ramzees, J., and Jerard, M. (2026). Is Non-IID an Artifact of Training from Scratch? A Critical Review of Data Heterogeneity in Federated Learning in the Pretraining Era. Zenodo. https://doi.org/10.5281/zenodo.23275814</p>
+
+<footer>
+This is a preprint and has not been peer-reviewed. The canonical record is on Zenodo at the DOI above.
+</footer>
+
+</body>
+</html>
